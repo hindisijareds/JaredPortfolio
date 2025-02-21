@@ -369,13 +369,16 @@ a:hover{
 }
 
 #hero .btn-showcase {
-    border-radius: 32px;
-    border-color: #7042f88b;
+    border-radius: 1px;
+    border-color: transparent;
+    border-style: solid;
+    border-image: linear-gradient(to right, #E64157, #E69F41);
     border-width: 1px;
+    border-image-slice: 1;
     backdrop-filter: blur(6px); 
     -webkit-backdrop-filter: blur(6px); 
-    box-shadow: inset 0 -7px 11px rgba(141, 53, 229, .136);
-    -webkit-box-shadow: inset 0 -7px 11px rgba(141, 53, 229, .136);
+    box-shadow: inset 0 -7px 11px rgba(229, 226, 53, 0.136);
+    -webkit-box-shadow: inset 0 -7px 11px rgba(229, 203, 53, 0.136);
     transition: box-shadow .45s cubic-bezier(.6,.6,0,1);
     -webkit-transition: box-shadow .45s cubic-bezier(.6,.6,0,1);
 }
@@ -385,7 +388,7 @@ a:hover{
 }
 
 #hero .btn-showcase:hover {
-    box-shadow: inset 0 -7px 11px rgba(141, 53, 229, .536);
+    box-shadow: inset 0 -7px 11px rgba(229, 211, 53, 0.536);
 }
 
 #hero .badge-button {
@@ -473,11 +476,12 @@ a:hover{
 #things-i-love .card {
     background-color: transparent;
     padding: 10px;
-    border-radius: 24px;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 0 1px 0 rgba(144, 81, 227, .5), 0 0 0.5px 0.5px rgba(141, 53, 229, .336);
-    -webkit-box-shadow: 0 0 1px 0 rgba(144, 81, 227, .5), 0 0 0.5px 0.5px rgba(141, 53, 229, .336);
+    border-radius: 1px;
+    border-color: transparent;
+    border-style: solid;
+    border-image: linear-gradient(to right, #E64157, #E69F41);
+    border-width: 1px;
+    border-image-slice: 1;
 }
 
 #things-i-love .circle-container {
@@ -611,11 +615,12 @@ a:hover{
     flex-direction: column;
     background-color: transparent;
     padding: 18px 0px;
-    border-radius: 25px;
-    backdrop-filter: blur(300px);
-    -webkit-backdrop-filter: blur(300px);
-    box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
-    -webkit-box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
+    border-radius: 1px;
+    border-color: transparent;
+    border-style: solid;
+    border-image: linear-gradient(to right, #E64157, #E69F41);
+    border-width: 1px;
+    border-image-slice: 1;
 }
 
 .skill-image{
@@ -644,11 +649,12 @@ a:hover{
     flex-direction: column;
     background-color: transparent;
     padding: 18px 0px;
-    border-radius: 25px;
-    backdrop-filter: blur(300px);
-    -webkit-backdrop-filter: blur(300px);
-    box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
-    -webkit-box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
+    border-radius: 1px;
+    border-color: transparent;
+    border-style: solid;
+    border-image: linear-gradient(to right, #E64157, #E69F41);
+    border-width: 1px;
+    border-image-slice: 1;
 }
 
 .tool-image{
@@ -677,11 +683,12 @@ a:hover{
 .project-card{
     background-color: transparent;
     padding: 10px;
-    border-radius: 24px;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
-    -webkit-box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
+    border-radius: 1px;
+    border-color: transparent;
+    border-style: solid;
+    border-image: linear-gradient(to right, #E64157, #E69F41);
+    border-width: 1px;
+    border-image-slice: 1;
 }
 
 .project-card .title {
@@ -791,10 +798,12 @@ a:hover{
     padding: 35px;
     border-radius: 15px;
     background-color: transparent;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 0 1px 0 rgba(144, 81, 227, .5), 0 0 0.5px 0.5px rgba(141, 53, 229, .336);
-    -webkit-box-shadow: 0 0 1px 0 rgba(144, 81, 227, .5), 0 0 0.5px 0.5px rgba(141, 53, 229, .336);
+    border-radius: 1px;
+    border-color: transparent;
+    border-style: solid;
+    border-image: linear-gradient(to right, #E64157, #E69F41);
+    border-width: 1px;
+    border-image-slice: 1;
 }
 
 .contact-form .form-control{
@@ -807,11 +816,21 @@ a:hover{
 .contact-form .form-control:focus{
     box-shadow: none;
     -webkit-box-shadow: none;
-    border-color: #850dd5;
+    border-radius: 1px;
+    border-color: transparent;
+    border-style: solid;
+    border-image: linear-gradient(to right, #E64157, #E69F41);
+    border-width: 1px;
+    border-image-slice: 1;
 }
 
 .contact-form .btn{
-    background-color: #850dd5;
+    border-radius: 1px;
+    border-color: transparent;
+    border-style: solid;
+    border-image: linear-gradient(to right, #E64157, #E69F41);
+    border-width: 1px;
+    border-image-slice: 1;
 }
 
 #footer > .container{
