@@ -138,6 +138,33 @@ a:hover{
             position: relative;
             z-index: 1;
 }
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+.thumbnail:hover {
+    transform: scale(1.05);
+}
+.thumbnail {
+transition: transform 0.3s ease-in-out;
+}
+.fullscreen img {
+    width: auto;
+    height: 90%;
+    max-width: 90%;
+    border-radius: 0;
+    transform: scale(0.8);
+    transition: transform 0.3s ease-in-out;
+}
 .enlarged {
     position: fixed;
             top: 50%;
