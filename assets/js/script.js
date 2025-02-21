@@ -111,5 +111,23 @@ const images = document.querySelectorAll(".kupal");
                 isEnlarged = false;
             }
         });
+ document.getElementById("thumbnail").addEventListener("click", function() {
+            let fullscreenDiv = document.createElement("div");
+            fullscreenDiv.classList.add("fullscreen");
+            
+            let fullImage = document.createElement("img");
+            fullImage.src = this.src;
+            
+            fullscreenDiv.appendChild(fullImage);
+            document.body.appendChild(fullscreenDiv);
+            
+            function closeFullscreen() {
+                fullscreenDiv.remove();
+                window.removeEventListener("scroll", closeFullscreen);
+            }
+            
+            fullscreenDiv.addEventListener("click", closeFullscreen);
+            window.addEventListener("scroll", closeFullscreen);
+        });
 
         
