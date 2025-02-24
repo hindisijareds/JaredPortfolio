@@ -111,23 +111,33 @@ const images = document.querySelectorAll(".kupal");
                 isEnlarged = false;
             }
         });
- document.getElementById("thumbnail").addEventListener("click", function() {
-            let fullscreenDiv = document.createElement("div");
-            fullscreenDiv.classList.add("fullscreen");
-            
-            let fullImage = document.createElement("img");
-            fullImage.src = this.src;
-            
-            fullscreenDiv.appendChild(fullImage);
-            document.body.appendChild(fullscreenDiv);
-            
-            function closeFullscreen() {
-                fullscreenDiv.remove();
-                window.removeEventListener("scroll", closeFullscreen);
+        let isSectionVisible = false;
+        
+        function toggleSection() {
+            const section = document.getElementById('extraSection');
+            const header = document.getElementById('headerSection');
+            if (isSectionVisible) {
+                section.style.display = 'none';
+                header.style.display = 'none';
+                document.body.classList.remove("noscroll");
+            } else {
+                section.style.display = 'block';
+                header.style.display = 'block';
+                document.body.classList.add("noscroll");
             }
-            
-            fullscreenDiv.addEventListener("click", closeFullscreen);
-            window.addEventListener("scroll", closeFullscreen);
-        });
+            isSectionVisible = !isSectionVisible;
+        }
+
+        function openFullscreen(element) {
+            const imageSrc = element.querySelector('img').src;
+            document.getElementById('fullscreenImage').src = imageSrc;
+            document.getElementById('fullscreenContainer').style.display = 'flex';
+        }
+
+        function closeFullscreen() {
+            document.getElementById('fullscreenContainer').style.display = 'none';
+        }
+
+        ;
 
         
