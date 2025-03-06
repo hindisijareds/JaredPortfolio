@@ -771,6 +771,8 @@ transition: transform 0.3s ease-in-out;
 }
 
 .project-card .banner-container{
+    width: 400px;
+    height: 200px;
     position: relative;
     border-radius: 12px;
     overflow: hidden;
